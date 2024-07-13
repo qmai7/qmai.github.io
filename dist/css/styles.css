@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
 * Start Bootstrap - Stylish Portfolio v6.0.6 (https://startbootstrap.com/theme/stylish-portfolio)
-* Copyright 2013-2023 Start Bootstrap
+* Copyright 2013-2024 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-stylish-portfolio/blob/master/LICENSE)
 */
 /*!
@@ -2844,20 +2844,11 @@ textarea.form-control-lg {
 }
 
 .btn-primary {
-  --bs-btn-color: #fff;
-  --bs-btn-bg: #1D809F;
-  --bs-btn-border-color: #1D809F;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #196d87;
-  --bs-btn-hover-border-color: #17667f;
-  --bs-btn-focus-shadow-rgb: 63, 147, 173;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #17667f;
-  --bs-btn-active-border-color: #166077;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #1D809F;
-  --bs-btn-disabled-border-color: #1D809F;
+  background-color: #364156!important;
+  border-color: #364156!important;
+  padding: 10px 20px;
+  font-size: 1,5 rem;
+  color: #fff!important
 }
 
 .btn-secondary {
@@ -2875,6 +2866,12 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #000;
   --bs-btn-disabled-bg: #ecb807;
   --bs-btn-disabled-border-color: #ecb807;
+}
+
+.btn-xl {
+  font-weight: 700;
+  padding: 20px 40px;
+  color: #fff!important;
 }
 
 .btn-success {
@@ -8022,6 +8019,12 @@ textarea.form-control-lg {
   white-space: normal !important;
 }
 
+.text-white {
+  color: #fff;
+}
+
+
+
 .text-nowrap {
   white-space: nowrap !important;
 }
@@ -8125,10 +8128,12 @@ textarea.form-control-lg {
 }
 
 .bg-primary {
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+  background-color: #364156!important;
 }
 
+.bg-light {
+  background-color: #fff!important;
+}
 .bg-secondary {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
@@ -10847,6 +10852,9 @@ html {
   color: rgba(255, 255, 255, 0.7);
 }
 
+.text-dark {
+  color: #000!important;
+}
 .scroll-to-top {
   position: fixed;
   right: 15px;
@@ -11014,16 +11022,29 @@ footer.footer .social-link:hover {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-masthead.jpg");
+  background: url("../assets/img/hmontreal.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+
+.tilted-box {
+  background-color: rgba(1,14,27,.5)
+}  
 }
 .masthead h1, .masthead .h1 {
   font-size: 4rem;
   margin: 0;
   padding: 0;
+  color: #fff!important;
 }
+
+.masthead h3 {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  color: #fff!important;
+}
+
 @media (min-width: 992px) {
   .masthead {
     height: 100vh;
@@ -11100,11 +11121,13 @@ footer.footer .social-link:hover {
 
 .service-icon {
   background-color: #fff;
-  color: #1D809F;
+  color: #364156;
   height: 7rem;
   width: 7rem;
-  display: block;
-  line-height: 7.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
   font-size: 2.25rem;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
