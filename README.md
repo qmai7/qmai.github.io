@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # qmai.github.io
 My porfolio
 =======
